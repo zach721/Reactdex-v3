@@ -1,6 +1,6 @@
 /*
 @Author: Zach721
-@Version: 2.0 Improved
+@Version: 3.0 Improved
 @Features:-
 */
 
@@ -16,6 +16,13 @@ import ash from './images/ash.png'
 import rotom from './images/search.png'
 import sinnoh from './images/sinnoh.png'
 import github from './images/github.png'
+import javascript from './images/javascript.png'
+import css from './images/css.png'
+import html from './images/html.png'
+import node from './images/nodejs.png'
+import react from './images/react.png'
+import vercel from './images/vercel.jpg'
+import vscode from './images/vscode.png'
 
 
 
@@ -33,15 +40,14 @@ function Pokedex(){
   const [pokedexmessage, setPokedexmessage] = React.useState(false)
   const [pokedexmessage2, setPokedexmessage2] = React.useState(false)
   const [pokestate, setPokestate] = React.useState(false)
-
-
   
   React.useEffect(()=>{
 
     axios.get(api).then((response) => {
       setPost(response.data)
       setImg(response.data.sprites.other['official-artwork'].front_default)
-      
+
+           
     })
 
   },[api])
@@ -53,7 +59,6 @@ function Pokedex(){
 
         axios.get(apides).then((response)=>{
         setDescrpt(response.data)})
-      
 
         },[api])
 
@@ -128,6 +133,7 @@ function Pokedex(){
     let api2 = 'https://pokeapi.co/api/v2/pokemon/'+ name
     axios.get(api2).then((response) => {
         setCount(response.data.game_indices[3].game_index)
+        
        
       })
     setApi(api2)
@@ -181,7 +187,10 @@ const showmessage2 = ()=>{
  const hidepokestate = ()=>{
   setPokestate(false)
  }
-
+ function namep(){
+  document.title = 'Reactdex - '+ post.forms[0].name;
+}
+namep()
     return (
       <div id="pokedex">
      
@@ -332,6 +341,20 @@ return(
       <img id="pokeball" src={pokelogo} weight='50' height='50' onMouseEnter={showmessage} onMouseLeave={hidemessage} onClick={showlist} />
       <img id="superball" src={superball} weight='50' height='50' onMouseEnter={showmessage2} onMouseLeave={hidemessage2} onClick={showpokestate} />
       <img id="sinnoh" src={sinnoh} />
+
+      <div id="technologies" >
+      <h1 id="technologiestext" >Used technologies</h1>
+      <ul>
+
+        <img src={html} width="20" height="20" />
+        <img src={css} width="20" height="20" />
+        <img src={javascript} width="20" height="20" />
+        <img src={react} width="20" height="20" />
+        <img src={node} width="20" height="20" />
+        <img src={vscode} width="20" height="20" />
+        <img src={vercel} width="20" height="20" />
+      </ul>
+      </div>
       </div>
       
     );

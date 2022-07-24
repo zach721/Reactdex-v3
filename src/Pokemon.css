@@ -226,7 +226,7 @@ z-index: 3;
     background-color: #ffffff;
     border-color: #bd2c2c;
     border-style: solid;
-   
+    box-shadow: 2px 2px 2px 1px rgba(1, 1, 1, 1);
 
 }
 
@@ -384,6 +384,9 @@ h1{
     border-color: #bd2c2c;
     border-style: solid;
     overflow-x:hidden;
+    box-shadow: 2px 2px 2px 1px rgba(1, 1, 1, 1);
+
+
 
 }
   
@@ -402,6 +405,7 @@ h1{
   background-color: #ffffff;
   text-shadow: 2px 2px #ffffff;
   border-radius: 10px;
+  
   }
 
   
@@ -417,6 +421,22 @@ h1{
     right: -100%;
     top: -745%;
 }
+
+#technologies{
+    font-family: monospace;
+    color: white;
+    font-size: 10px;
+    position: absolute;
+    z-index: 4;
+    top: 102%;
+    right: 27%;
+
+}
+#technologiestext{
+    position: relative;
+    right: -5%;
+}
+
 
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
