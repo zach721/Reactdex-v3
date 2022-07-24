@@ -23,7 +23,7 @@ import node from './images/nodejs.png'
 import react from './images/react.png'
 import vercel from './images/vercel.jpg'
 import vscode from './images/vscode.png'
-
+import npm from './images/npm.png'
 
 
 function Pokedex(){
@@ -353,6 +353,8 @@ return(
         <img src={node}  id="imagetech" width="20" height="20" />
         <img src={vscode}  id="imagetech" width="20" height="20" />
         <img src={vercel}  id="imagetech" width="20" height="20" />
+        <img src={npm}  id="imagetech" width="20" height="20" />
+
       </ul>
       </div>
       </div>
