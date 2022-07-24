@@ -346,13 +346,13 @@ return(
       <h1 id="technologiestext" >Used technologies</h1>
       <ul>
 
-        <img src={html} width="20" height="20" />
-        <img src={css} width="20" height="20" />
-        <img src={javascript} width="20" height="20" />
-        <img src={react} width="20" height="20" />
-        <img src={node} width="20" height="20" />
-        <img src={vscode} width="20" height="20" />
-        <img src={vercel} width="20" height="20" />
+        <img src={html} id="imagetech" width="20" height="20" />
+        <img src={css}  id="imagetech" width="20" height="20" />
+        <img src={javascript} id="imagetech" width="20" height="20" />
+        <img src={react}  id="imagetech" width="20" height="20" />
+        <img src={node}  id="imagetech" width="20" height="20" />
+        <img src={vscode}  id="imagetech" width="20" height="20" />
+        <img src={vercel}  id="imagetech" width="20" height="20" />
       </ul>
       </div>
       </div>

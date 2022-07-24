@@ -15,7 +15,10 @@
     font-family: Pokefont3;
     src: url('font/PokemonSolid.ttf');
 }
-
+#buttonright{
+    padding-left: 10px;
+    position: relative;
+}
 #buttonright:hover{
     
     transform: scale(1.1); 
@@ -429,12 +432,21 @@ h1{
     position: absolute;
     z-index: 4;
     top: 102%;
-    right: 27%;
+    right: 29%;
 
 }
 #technologiestext{
     position: relative;
-    right: -5%;
+    right: -10%;
+
+}
+#imagetech{
+    padding-right: 10px;
+
+}
+#imagetech:hover{
+    
+    transform: scale(1.1);   
 }
 
 
